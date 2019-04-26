@@ -1,0 +1,8 @@
+- name: <span class="icon-home"><span> Home
+  link: /
+- name: <span class="icon-file-text"><span> About
+  link: /about.html
+- name: <span class="icon-drawer"><span> Blog
+  link: /blog.html
+- name: <span class="icon-user-tie"><span> Staff
+  link: /staff.html
