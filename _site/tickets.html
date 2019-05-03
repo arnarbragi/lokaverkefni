@@ -2,27 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ 'style.css' | relative_url }}">
+    <title></title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <div class="header">
     <header>
-      {% include navigation.html %}
+      <input class="button" type="checkbox" id="toggle">
+<label for="toggle">&#9776;</label>
+<nav>
+  <ul class="menu">
+    
+      <li class="link"><a href="/" ><span class="icon-home"><span> Home</a></li>
+    
+      <li class="link"><a href="/about.html" ><span class="icon-file-text"><span> About</a></li>
+    
+      <li class="link"><a href="/artists.html" ><span class="icon-users"><span> Artists</a></li>
+    
+      <li class="link"><a href="/tickets.html" class="current"><span class="icon-ticket"><span> Tickets</a></li>
+    
+  </ul>
+</nav>
+
     </header>
   </div>
   <div class="body">
     <body>
-      {{ content }}
+      <h1></h1>
+<h3>Ticket prices:</h3>
+<p>USD: $200</p>
+<p>EUR: €179</p>
+<p>GBP: £153</p>
+<p>JP¥: ¥22.299</p>
+<div class="formid">
+    <form action="" >
+      <fieldset>
+        <legend>BUY A TICKET</legend>
+        First name:<br>
+        <input type="text" name="firstname" placeholder="John"><br>
+        Last name:<br>
+        <input type="text" name="lastname" placeholder="Doe"><br>
+        Email:<br>
+        <input type="email" name="mail" placeholder="john@doe.com"><br>
+        Gender:<br>
+        <input type="radio" name="kyn" value="karl" checked> Karl<br>
+        <input type="radio" name="kyn" value="kona"> Kona<br>
+        <input type="radio" name="kyn" value="annad"> Annað<br>
+        Payment method<br>
+        (if you do not choose credit card, a ticket will be reserved for you but
+        you will have to come down to our offices to pay in cash)<br>
+        <select name="borgun">
+          <option value="credit-card"><span class="icon-credit-card"><span>Credit card</option>
+          <option value="dollar"><span class="icon-coin-dollar"><span>USD</option>
+          <option value="euro"><span class="icon-coin-euro"><span>EUR</option>
+          <option value="pound"><span class="icon-coin-pound"><span>GBP</option>
+          <option value="yen"><span class="icon-coin-yen"><span>JP¥</option>
+        </select><br><br>
+        <input type="submit" value="Place Order">
+      </fieldset>
+    </form>
+  </div>
     </body>
   </div>
   <div class="ad">
     <a href="https://www.fruits.com/" target="_blank">
-      <img class="appleleft" src="{{ 'assets/img/apple.jpg' | relative_url }}">
-      <img class="adimg" src="{{ 'assets/img/ad.jpg' | relative_url }}">
-      <img class="appleright" src="{{ 'assets/img/apple.jpg' | relative_url }}">
+      <img class="appleleft" src="/assets/img/apple.jpg">
+      <img class="adimg" src="/assets/img/ad.jpg">
+      <img class="appleright" src="/assets/img/apple.jpg">
       <h3 class="adtext">FRESH FRUIT STRAIGHT TO YOUR DOORSTEP</h3>
     </a>
   </div>

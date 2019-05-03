@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<h3>Ticket prices:</h3>
+<p>USD: $200</p>
+<p>EUR: €179</p>
+<p>GBP: £153</p>
+<p>JP¥: ¥22.299</p>
+<div class="formid">
+    <form action="" >
+      <fieldset>
+        <legend>BUY A TICKET</legend>
+        First name:<br>
+        <input type="text" name="firstname" placeholder="John"><br>
+        Last name:<br>
+        <input type="text" name="lastname" placeholder="Doe"><br>
+        Email:<br>
+        <input type="email" name="mail" placeholder="john@doe.com"><br>
+        Gender:<br>
+        <input type="radio" name="kyn" value="karl" checked> Karl<br>
+        <input type="radio" name="kyn" value="kona"> Kona<br>
+        <input type="radio" name="kyn" value="annad"> Annað<br>
+        Payment method<br>
+        (if you do not choose credit card, a ticket will be reserved for you but
+        you will have to come down to our offices to pay in cash)<br>
+        <select name="borgun">
+          <option value="credit-card"><span class="icon-credit-card"><span>Credit card</option>
+          <option value="dollar"><span class="icon-coin-dollar"><span>USD</option>
+          <option value="euro"><span class="icon-coin-euro"><span>EUR</option>
+          <option value="pound"><span class="icon-coin-pound"><span>GBP</option>
+          <option value="yen"><span class="icon-coin-yen"><span>JP¥</option>
+        </select><br><br>
+        <input type="submit" value="Place Order">
+      </fieldset>
+    </form>
+  </div>
