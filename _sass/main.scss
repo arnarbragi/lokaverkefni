@@ -1,9 +1,9 @@
 html {
-  background: rgb(173, 216, 230);
+  background: rgb(231, 152, 201);
 }
 
 .current {
-  color: green;
+  color: darkred;
 }
 
 .button {
@@ -15,7 +15,7 @@ label,
   border-radius: 6px;
 }
 label {
-  color: #0087cc;
+  color: crimson;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
@@ -31,7 +31,7 @@ input:checked + label {
   color: grey;
 }
 nav {
-  background-color: lightblue;
+  background-color: rgb(231, 152, 201);
   transform: translateX(-120px);
   overflow: hidden;
   position: fixed;
@@ -58,7 +58,7 @@ input:checked ~ nav {
   border-bottom: 0;
 }
 a {
-  color: #0087cc;
+  color: crimson;
   display: block;
   padding: 6px 12px;
   text-decoration: none;
@@ -85,7 +85,7 @@ p {
 
 .linkar a{
   display: inline;
-  color: blue;
+  color: crimson;
 }
 
 .logo {
@@ -340,7 +340,7 @@ nav {
   border-bottom: 0;
 }
 a {
-  color: #0087cc;
+  color: crimson;
   display: inline;
   padding: 6px 12px;
   text-decoration: none;
